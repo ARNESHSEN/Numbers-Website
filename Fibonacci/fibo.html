@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fibonacci Series</title>
+    <link rel="stylesheet" href="fibostyles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Fibonacci Series</h1>
+    </header>
+    <main>
+      <section id="description">
+        <h2>What is the Fibonacci Series?</h2>
+        <p>
+          The Fibonacci series is a sequence of numbers where each number is the
+          sum of the two preceding ones, usually starting with 0 and 1. The
+          sequence goes: 0, 1, 1, 2, 3, 5, 8, and so on.
+        </p>
+      </section>
+
+      <!-- C++ -->
+      <section id="code-examples">
+        <h2>Code Examples</h2>
+        <div class="code-block">
+          <h3>C++</h3>
+          <pre><code>
+// C++ program to display Fibonacci series
+#include &lt;iostream&gt;
+using namespace std;
+
+void printFibonacci(int n) {
+    int t1 = 0, t2 = 1, nextTerm;
+    for (int i = 1; i <= n; ++i) {
+        cout &lt;&lt; t1 &lt;&lt; " ";
+        nextTerm = t1 + t2;
+        t1 = t2;
+        t2 = nextTerm;
+    }
+}
+
+int main() {
+    int n = 10;
+    printFibonacci(n);
+    return 0;
+}
+                </code></pre>
+          <button class="copy-btn">Copy Code</button>
+        </div>
+
+        <!-- C -->
+        <div class="code-block">
+          <h3>C</h3>
+          <pre><code>
+// C program to display Fibonacci series
+#include &lt;stdio.h&gt;
+
+void printFibonacci(int n) {
+    int t1 = 0, t2 = 1, nextTerm;
+    for (int i = 1; i <= n; ++i) {
+        printf("%d ", t1);
+        nextTerm = t1 + t2;
+        t1 = t2;
+        t2 = nextTerm;
+    }
+}
+
+int main() {
+    int n = 10;
+    printFibonacci(n);
+    return 0;
+}
+                </code></pre>
+          <button class="copy-btn">Copy Code</button>
+        </div>
+
+        <!-- JAVA -->
+        <div class="code-block">
+          <h3>Java</h3>
+          <pre><code>
+// Java program to display Fibonacci series
+public class Fibonacci {
+    static void printFibonacci(int n) {
+        int t1 = 0, t2 = 1, nextTerm;
+        for (int i = 1; i <= n; ++i) {
+            System.out.print(t1 + " ");
+            nextTerm = t1 + t2;
+            t1 = t2;
+            t2 = nextTerm;
+        }
+    }
+
+    public static void main(String[] args) {
+        int n = 10;
+        printFibonacci(n);
+    }
+}
+                </code></pre>
+          <button class="copy-btn">Copy Code</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Fibonacci Series Website</p>
+    </footer>
+    <script src="fiboscript.js"></script>
+  </body>
+</html>

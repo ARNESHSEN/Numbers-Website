@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prime Numbers</title>
+    <link rel="stylesheet" href="primestyles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Prime Numbers</h1>
+    </header>
+    <main>
+      <section id="description">
+        <h2>What are Prime Numbers?</h2>
+        <p>
+          A prime number is a natural number greater than 1 that has no positive
+          divisors other than 1 and itself. In other words, it is a number that
+          cannot be formed by multiplying two smaller natural numbers.
+        </p>
+      </section>
+      <section id="code-examples">
+        <h2>Code Examples</h2>
+
+        <!-- C++ -->
+        <div class="code-block">
+          <h3>C++</h3>
+          <pre><code>
+// C++ program to check if a number is prime
+#include &lt;iostream&gt;
+using namespace std;
+
+bool isPrime(int n) {
+    if (n <= 1) return false;
+    for (int i = 2; i < n; i++)
+        if (n % i == 0)
+            return false;
+    return true;
+}
+
+int main() {
+    int num = 29;
+    if (isPrime(num))
+        cout &lt;&lt; num &lt;&lt; " is a prime number.";
+    else
+        cout &lt;&lt; num &lt;&lt; " is not a prime number.";
+    return 0;
+}
+                </code></pre>
+          <button class="copy-btn">Copy Code</button>
+        </div>
+
+        <!-- C -->
+        <div class="code-block">
+          <h3>C</h3>
+          <pre><code>
+// C program to check if a number is prime
+#include &lt;stdio.h&gt;
+
+int isPrime(int n) {
+    if (n <= 1) return 0;
+    for (int i = 2; i < n; i++)
+        if (n % i == 0)
+            return 0;
+    return 1;
+}
+
+int main() {
+    int num = 29;
+    if (isPrime(num))
+        printf("%d is a prime number.", num);
+    else
+        printf("%d is not a prime number.", num);
+    return 0;
+}
+                </code></pre>
+          <button class="copy-btn">Copy Code</button>
+        </div>
+
+        <!-- JAVA -->
+        <div class="code-block">
+          <h3>Java</h3>
+          <pre><code>
+// Java program to check if a number is prime
+public class Prime {
+    static boolean isPrime(int n) {
+        if (n <= 1) return false;
+        for (int i = 2; i < n; i++)
+            if (n % i == 0)
+                return false;
+        return true;
+    }
+
+    public static void main(String[] args) {
+        int num = 29;
+        if (isPrime(num))
+            System.out.println(num + " is a prime number.");
+        else
+            System.out.println(num + " is not a prime number.");
+    }
+}
+                </code></pre>
+          <button class="copy-btn">Copy Code</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Prime Numbers Website</p>
+    </footer>
+    <script src="primescript.js"></script>
+  </body>
+</html>

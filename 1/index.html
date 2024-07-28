@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Programs</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Number Programs</h1>
+    </header>
+    <nav>
+      <button onclick="showPrimeChecker()">Prime Checker</button>
+      <button onclick="showFibonacci()">Fibonacci Series</button>
+      <button onclick="showFactorial()">Factorial Calculator</button>
+      <button onclick="showSumOfDigits()">Sum of Digits</button>
+      <button onclick="showArmstrong()">Armstrong Checker</button>
+      <button onclick="showPerfect()">Perfect Number Checker</button>
+      <button onclick="showPalindrome()">Palindrome Checker</button>
+      <button onclick="showEvenOdd()">Even/Odd Checker</button>
+      <button onclick="showGCD()">GCD Calculator</button>
+      <button onclick="showLCM()">LCM Calculator</button>
+    </nav>
+    <main>
+      <section id="primeChecker" class="hidden">
+        <h2>Prime Number Checker</h2>
+        <input type="number" id="primeInput" placeholder="Enter a number" />
+        <button id="check" onclick="checkPrime()">Check</button>
+        <p id="primeResult"></p>
+        <a id="prime" href="/Primes/prime.html" class="hidden">Know More</a>
+      </section>
+
+      <section id="fibonacci" class="hidden">
+        <h2>Fibonacci Series</h2>
+        <input
+          type="number"
+          id="fibonacciInput"
+          placeholder="Enter number of terms"
+        />
+        <button onclick="generateFibonacci()">Generate</button>
+        <p id="fibonacciResult"></p>
+        <a id="fibo" href="/Fibonacci/fibo.html" class="hidden">Know More</a>
+      </section>
+
+      <section id="factorial" class="hidden">
+        <h2>Factorial Calculator</h2>
+        <input type="number" id="factorialInput" placeholder="Enter a number" />
+        <button onclick="calculateFactorial()">Calculate</button>
+        <p id="factorialResult"></p>
+      </section>
+
+      <section id="sumOfDigits" class="hidden">
+        <h2>Sum of Digits</h2>
+        <input
+          type="number"
+          id="sumOfDigitsInput"
+          placeholder="Enter a number"
+        />
+        <button onclick="sumDigits()">Calculate</button>
+        <p id="sumOfDigitsResult"></p>
+      </section>
+
+      <section id="armstrong" class="hidden">
+        <h2>Armstrong Number Checker</h2>
+        <input type="number" id="armstrongInput" placeholder="Enter a number" />
+        <button onclick="checkArmstrong()">Check</button>
+        <p id="armstrongResult"></p>
+        <a id="arms" href="/Armstrong/arms.html" class="hidden">Know More</a>
+      </section>
+
+      <section id="perfect" class="hidden">
+        <h2>Perfect Number Checker</h2>
+        <input type="number" id="perfectInput" placeholder="Enter a number" />
+        <button onclick="checkPerfect()">Check</button>
+        <p id="perfectResult"></p>
+      </section>
+
+      <section id="palindrome" class="hidden">
+        <h2>Palindrome Checker</h2>
+        <input
+          type="number"
+          id="palindromeInput"
+          placeholder="Enter a number"
+        />
+        <button onclick="checkPalindrome()">Check</button>
+        <p id="palindromeResult"></p>
+      </section>
+
+      <section id="evenOdd" class="hidden">
+        <h2>Even/Odd Checker</h2>
+        <input type="number" id="evenOddInput" placeholder="Enter a number" />
+        <button onclick="checkEvenOdd()">Check</button>
+        <p id="evenOddResult"></p>
+      </section>
+
+      <section id="gcd" class="hidden">
+        <h2>GCD Calculator</h2>
+        <input type="number" id="gcdInput1" placeholder="Enter first number" />
+        <input type="number" id="gcdInput2" placeholder="Enter second number" />
+        <button onclick="calculateGCD()">Calculate</button>
+        <p id="gcdResult"></p>
+      </section>
+
+      <section id="lcm" class="hidden">
+        <h2>LCM Calculator</h2>
+        <input type="number" id="lcmInput1" placeholder="Enter first number" />
+        <input type="number" id="lcmInput2" placeholder="Enter second number" />
+        <button onclick="calculateLCM()">Calculate</button>
+        <p id="lcmResult"></p>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
