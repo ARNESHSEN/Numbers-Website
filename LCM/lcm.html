@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LCM Calculator</title>
+    <link rel="stylesheet" href="lcmstyles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>LCM Calculator</h1>
+    </header>
+    <main>
+      <section id="description">
+        <h2>What is the LCM?</h2>
+        <p>
+          The Least Common Multiple (LCM) of two or more integers is the
+          smallest positive integer that is divisible by each of the integers.
+          For example, the LCM of 4 and 5 is 20.
+        </p>
+      </section>
+      <section id="code-examples">
+        <h2>Code Examples</h2>
+
+        <!-- C++ -->
+        <div class="code-block">
+          <h3>C++</h3>
+          <pre><code>
+// C++ program to calculate the LCM of two numbers
+#include &lt;iostream&gt;
+using namespace std;
+
+// Function to calculate the GCD
+int gcd(int a, int b) {
+    while (b != 0) {
+        int temp = b;
+        b = a % b;
+        a = temp;
+    }
+    return a;
+}
+
+// Function to calculate the LCM
+int lcm(int a, int b) {
+    return (a * b) / gcd(a, b);
+}
+
+int main() {
+    int a = 12, b = 15;
+    cout &lt;&lt; "LCM of " &lt;&lt; a &lt;&lt; " and " &lt;&lt; b &lt;&lt; " is " &lt;&lt; lcm(a, b);
+    return 0;
+}
+                </code></pre>
+          <button class="copy-btn">Copy Code</button>
+        </div>
+
+        <!-- C -->
+        <div class="code-block">
+          <h3>C</h3>
+          <pre><code>
+// C program to calculate the LCM of two numbers
+#include &lt;stdio.h>
+
+// Function to calculate the GCD
+int gcd(int a, int b) {
+    while (b != 0) {
+        int temp = b;
+        b = a % b;
+        a = temp;
+    }
+    return a;
+}
+
+// Function to calculate the LCM
+int lcm(int a, int b) {
+    return (a * b) / gcd(a, b);
+}
+
+int main() {
+    int a = 12, b = 15;
+    printf("LCM of %d and %d is %d", a, b, lcm(a, b));
+    return 0;
+}
+                </code></pre>
+          <button class="copy-btn">Copy Code</button>
+        </div>
+
+        <!-- JAVA -->
+        <div class="code-block">
+          <h3>Java</h3>
+          <pre><code>
+// Java program to calculate the LCM of two numbers
+public class LCMCalculator {
+    // Function to calculate the GCD
+    static int gcd(int a, int b) {
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+        return a;
+    }
+
+    // Function to calculate the LCM
+    static int lcm(int a, int b) {
+        return (a * b) / gcd(a, b);
+    }
+
+    public static void main(String[] args) {
+        int a = 12, b = 15;
+        System.out.println("LCM of " + a + " and " + b + " is " + lcm(a, b));
+    }
+}
+                </code></pre>
+          <button class="copy-btn">Copy Code</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 LCM Calculator Website</p>
+    </footer>
+    <script src="lcmscript.js"></script>
+  </body>
+</html>

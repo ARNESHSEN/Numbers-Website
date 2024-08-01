@@ -91,6 +91,9 @@ function calculateFactorial() {
   document.getElementById(
     "factorialResult"
   ).innerText = `Factorial of ${number} is ${factorial}`;
+
+  const about = document.getElementById("fact");
+  about.classList.add("see");
 }
 
 function sumDigits() {
@@ -102,6 +105,9 @@ function sumDigits() {
   document.getElementById(
     "sumOfDigitsResult"
   ).innerText = `Sum of digits of ${number} is ${sum}`;
+
+  const about = document.getElementById("sumdigit");
+  about.classList.add("see");
 }
 
 function checkArmstrong() {
@@ -131,6 +137,9 @@ function checkPerfect() {
   document.getElementById("perfectResult").innerText = isPerfect
     ? `${number} is a perfect number.`
     : `${number} is not a perfect number.`;
+
+  const about = document.getElementById("perfectNum");
+  about.classList.add("see");
 }
 
 function checkPalindrome() {
@@ -140,6 +149,9 @@ function checkPalindrome() {
   document.getElementById("palindromeResult").innerText = isPalindrome
     ? `${number} is a palindrome.`
     : `${number} is not a palindrome.`;
+
+  const about = document.getElementById("palinNum");
+  about.classList.add("see");
 }
 
 function checkEvenOdd() {
@@ -148,6 +160,9 @@ function checkEvenOdd() {
   document.getElementById("evenOddResult").innerText = isEven
     ? `${number} is an even number.`
     : `${number} is an odd number.`;
+
+  const about = document.getElementById("evenodd");
+  about.classList.add("see");
 }
 
 function calculateGCD() {
@@ -162,6 +177,9 @@ function calculateGCD() {
   document.getElementById(
     "gcdResult"
   ).innerText = `GCD of ${number1} and ${number2} is ${gcd}`;
+
+  const about = document.getElementById("Gcd");
+  about.classList.add("see");
 }
 
 function calculateLCM() {
@@ -172,4 +190,7 @@ function calculateLCM() {
   document.getElementById(
     "lcmResult"
   ).innerText = `LCM of ${number1} and ${number2} is ${lcm}`;
+
+  const about = document.getElementById("Lcm");
+  about.classList.add("see");
 }

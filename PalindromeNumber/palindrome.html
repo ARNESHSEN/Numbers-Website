@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palindrome Number Checker</title>
+    <link rel="stylesheet" href="palindromestyles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Palindrome Number Checker</h1>
+    </header>
+    <main>
+      <section id="description">
+        <h2>What is a Palindrome Number?</h2>
+        <p>
+          A palindrome number is a number that remains the same when its digits
+          are reversed. For example, 121 and 1331 are palindrome numbers because
+          they read the same backward as forward.
+        </p>
+      </section>
+      <section id="code-examples">
+        <h2>Code Examples</h2>
+
+        <!-- C++ -->
+        <div class="code-block">
+          <h3>C++</h3>
+          <pre><code>
+// C++ program to check if a number is a palindrome
+#include &lt;iostream&gt;
+using namespace std;
+
+bool isPalindrome(int n) {
+    int original = n;
+    int reversed = 0;
+    while (n > 0) {
+        reversed = reversed * 10 + n % 10;
+        n /= 10;
+    }
+    return original == reversed;
+}
+
+int main() {
+    int num = 121;
+    if (isPalindrome(num))
+        cout &lt;&lt; num &lt;&lt; " is a palindrome number.";
+    else
+        cout &lt;&lt; num &lt;&lt; " is not a palindrome number.";
+    return 0;
+}
+                </code></pre>
+          <button class="copy-btn">Copy Code</button>
+        </div>
+
+        <!-- C -->
+        <div class="code-block">
+          <h3>C</h3>
+          <pre><code>
+// C program to check if a number is a palindrome
+#include &lt;stdio.h&gt;
+
+int isPalindrome(int n) {
+    int original = n;
+    int reversed = 0;
+    while (n > 0) {
+        reversed = reversed * 10 + n % 10;
+        n /= 10;
+    }
+    return original == reversed;
+}
+
+int main() {
+    int num = 121;
+    if (isPalindrome(num))
+        printf("%d is a palindrome number.", num);
+    else
+        printf("%d is not a palindrome number.", num);
+    return 0;
+}
+                </code></pre>
+          <button class="copy-btn">Copy Code</button>
+        </div>
+
+        <!-- JAVA -->
+        <div class="code-block">
+          <h3>Java</h3>
+          <pre><code>
+// Java program to check if a number is a palindrome
+public class PalindromeNumberChecker {
+    static boolean isPalindrome(int n) {
+        int original = n;
+        int reversed = 0;
+        while (n > 0) {
+            reversed = reversed * 10 + n % 10;
+            n /= 10;
+        }
+        return original == reversed;
+    }
+
+    public static void main(String[] args) {
+        int num = 121;
+        if (isPalindrome(num))
+            System.out.println(num + " is a palindrome number.");
+        else
+            System.out.println(num + " is not a palindrome number.");
+    }
+}
+                </code></pre>
+          <button class="copy-btn">Copy Code</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Palindrome Number Checker Website</p>
+    </footer>
+    <script src="palindomescript.js"></script>
+  </body>
+</html>

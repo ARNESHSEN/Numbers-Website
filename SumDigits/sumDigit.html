@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sum of Digits</title>
+    <link rel="stylesheet" href="sumstyles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Sum of Digits</h1>
+    </header>
+    <main>
+      <section id="description">
+        <h2>What is Sum of Digits?</h2>
+        <p>
+          The sum of digits is the sum of all the individual digits in a given
+          number. For example, the sum of the digits of 1234 is 1 + 2 + 3 + 4 =
+          10.
+        </p>
+      </section>
+
+      <!-- C++ -->
+      <section id="code-examples">
+        <h2>Code Examples</h2>
+        <div class="code-block">
+          <h3>C++</h3>
+          <pre><code>
+// C++ program to calculate sum of digits
+#include &lt;iostream&gt;
+using namespace std;
+
+int sumOfDigits(int n) {
+    int sum = 0;
+    while (n != 0) {
+        sum += n % 10;
+        n /= 10;
+    }
+    return sum;
+}
+
+int main() {
+    int num = 1234;
+    cout &lt;&lt; "Sum of digits of " &lt;&lt; num &lt;&lt; " is " &lt;&lt; sumOfDigits(num);
+    return 0;
+}
+                </code></pre>
+          <button class="copy-btn">Copy Code</button>
+        </div>
+
+        <!-- C -->
+        <div class="code-block">
+          <h3>C</h3>
+          <pre><code>
+// C program to calculate sum of digits
+#include &lt;stdio.h&gt;
+
+int sumOfDigits(int n) {
+    int sum = 0;
+    while (n != 0) {
+        sum += n % 10;
+        n /= 10;
+    }
+    return sum;
+}
+
+int main() {
+    int num = 1234;
+    printf("Sum of digits of %d is %d", num, sumOfDigits(num));
+    return 0;
+}
+                </code></pre>
+          <button class="copy-btn">Copy Code</button>
+        </div>
+
+        <!-- JAVA -->
+        <div class="code-block">
+          <h3>Java</h3>
+          <pre><code>
+// Java program to calculate sum of digits
+public class SumOfDigits {
+    static int sumOfDigits(int n) {
+        int sum = 0;
+        while (n != 0) {
+            sum += n % 10;
+            n /= 10;
+        }
+        return sum;
+    }
+
+    public static void main(String[] args) {
+        int num = 1234;
+        System.out.println("Sum of digits of " + num + " is " + sumOfDigits(num));
+    }
+}
+                </code></pre>
+          <button class="copy-btn">Copy Code</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Sum of Digits Website</p>
+    </footer>
+    <script src="sumscript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Factorial Calculator</title>
+    <link rel="stylesheet" href="factstyles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Factorial Calculator</h1>
+    </header>
+    <main>
+      <section id="description">
+        <h2>What is a Factorial?</h2>
+        <p>
+          A factorial, denoted by an exclamation mark (n!), is the product of
+          all positive integers less than or equal to n. For example, the
+          factorial of 5 (5!) is 5 * 4 * 3 * 2 * 1 = 120.
+        </p>
+      </section>
+
+      <!-- C++ -->
+      <section id="code-examples">
+        <h2>Code Examples</h2>
+        <div class="code-block">
+          <h3>C++</h3>
+          <pre><code>
+// C++ program to calculate factorial
+#include &lt;iostream&gt;
+using namespace std;
+
+int factorial(int n) {
+    if(n == 0) return 1;
+    return n * factorial(n - 1);
+}
+
+int main() {
+    int num = 5;
+    cout &lt;&lt; "Factorial of " &lt;&lt; num &lt;&lt; " is " &lt;&lt; factorial(num);
+    return 0;
+}
+                </code></pre>
+          <button class="copy-btn">Copy Code</button>
+        </div>
+
+        <!-- C -->
+        <div class="code-block">
+          <h3>C</h3>
+          <pre><code>
+// C program to calculate factorial
+#include &lt;stdio.h&gt;
+
+int factorial(int n) {
+    if(n == 0) return 1;
+    return n * factorial(n - 1);
+}
+
+int main() {
+    int num = 5;
+    printf("Factorial of %d is %d", num, factorial(num));
+    return 0;
+}
+                </code></pre>
+          <button class="copy-btn">Copy Code</button>
+        </div>
+
+        <!-- JAVA -->
+        <div class="code-block">
+          <h3>Java</h3>
+          <pre><code>
+// Java program to calculate factorial
+public class Factorial {
+    static int factorial(int n) {
+        if(n == 0) return 1;
+        return n * factorial(n - 1);
+    }
+
+    public static void main(String[] args) {
+        int num = 5;
+        System.out.println("Factorial of " + num + " is " + factorial(num));
+    }
+}
+                </code></pre>
+          <button class="copy-btn">Copy Code</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Factorial Calculator Website</p>
+    </footer>
+    <script src="factscript.js"></script>
+  </body>
+</html>

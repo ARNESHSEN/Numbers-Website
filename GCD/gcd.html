@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GCD Calculator</title>
+    <link rel="stylesheet" href="gcdstyles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>GCD Calculator</h1>
+    </header>
+    <main>
+      <section id="description">
+        <h2>What is the GCD?</h2>
+        <p>
+          The Greatest Common Divisor (GCD) of two or more integers is the
+          largest positive integer that divides all of the integers without
+          leaving a remainder. For example, the GCD of 12 and 18 is 6.
+        </p>
+      </section>
+      <section id="code-examples">
+        <h2>Code Examples</h2>
+
+        <!-- C++ -->
+        <div class="code-block">
+          <h3>C++</h3>
+          <pre><code>
+// C++ program to calculate the GCD of two numbers
+#include &lt;iostream&gt;
+using namespace std;
+
+int gcd(int a, int b) {
+    while (b != 0) {
+        int temp = b;
+        b = a % b;
+        a = temp;
+    }
+    return a;
+}
+
+int main() {
+    int a = 48, b = 18;
+    cout &lt;&lt; "GCD of " &lt;&lt; a &lt;&lt; " and " &lt;&lt; b &lt;&lt; " is " &lt;&lt; gcd(a, b);
+    return 0;
+}
+                </code></pre>
+          <button class="copy-btn">Copy Code</button>
+        </div>
+
+        <!-- C -->
+        <div class="code-block">
+          <h3>C</h3>
+          <pre><code>
+// C program to calculate the GCD of two numbers
+#include &lt;stdio.h&gt;
+
+int gcd(int a, int b) {
+    while (b != 0) {
+        int temp = b;
+        b = a % b;
+        a = temp;
+    }
+    return a;
+}
+
+int main() {
+    int a = 48, b = 18;
+    printf("GCD of %d and %d is %d", a, b, gcd(a, b));
+    return 0;
+}
+                </code></pre>
+          <button class="copy-btn">Copy Code</button>
+        </div>
+
+        <!-- JAVA -->
+        <div class="code-block">
+          <h3>Java</h3>
+          <pre><code>
+// Java program to calculate the GCD of two numbers
+public class GCDCalculator {
+    static int gcd(int a, int b) {
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+        return a;
+    }
+
+    public static void main(String[] args) {
+        int a = 48, b = 18;
+        System.out.println("GCD of " + a + " and " + b + " is " + gcd(a, b));
+    }
+}
+                </code></pre>
+          <button class="copy-btn">Copy Code</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 GCD Calculator Website</p>
+    </footer>
+    <script src="gcdscript.js"></script>
+  </body>
+</html>
